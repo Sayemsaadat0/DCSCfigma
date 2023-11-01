@@ -5,6 +5,9 @@ import 'swiper/css/navigation';
 
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
+import slider1 from '../../../public/swiper1.png'
+import slider2 from '../../../public/swiper2.png'
+import slider3 from '../../../public/swiper3.png'
 
 const Hero = () => {
     const backgroundStyle = {
@@ -25,24 +28,26 @@ const Hero = () => {
             </div>
 
             {/* swier */}
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                <SwiperSlide>
-                    <div className='grid grid-cols-1 md:grid-cols-3 place-items-center'>
-                        <Image src={'https://i.pinimg.com/736x/3e/1e/a8/3e1ea8d07941f6031604cb55a5667615.jpg'} width={400} height={400} alt='slider'></Image>
-                        <Image src={'https://i.pinimg.com/736x/3e/1e/a8/3e1ea8d07941f6031604cb55a5667615.jpg'} width={400} height={400} alt='slider'></Image>
-                        <Image src={'https://i.pinimg.com/736x/3e/1e/a8/3e1ea8d07941f6031604cb55a5667615.jpg'} width={400} height={400} alt='slider'></Image>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='grid grid-cols-1 md:grid-cols-3 place-items-center'>
-                        <Image src={'https://i.pinimg.com/736x/3e/1e/a8/3e1ea8d07941f6031604cb55a5667615.jpg'} width={400} height={400} alt='slider'></Image>
-                        <Image src={'https://i.pinimg.com/736x/3e/1e/a8/3e1ea8d07941f6031604cb55a5667615.jpg'} width={400} height={400} alt='slider'></Image>
-                        <Image src={'https://i.pinimg.com/736x/3e/1e/a8/3e1ea8d07941f6031604cb55a5667615.jpg'} width={400} height={400} alt='slider'></Image>
-                    </div>
-                </SwiperSlide>
+            <div className='max-w-[1500px] pt-28 mx-auto '>
+                <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                    <SwiperSlide>
+                        <div className='grid grid-cols-1 md:grid-cols-3 place-items-center gap-8'>
+                            <Image className='rounded-xl' src={slider1} width={500} height={500} alt='slider'></Image>
+                            <Image className='rounded-xl' src={slider2} width={500} height={500} alt='slider'></Image>
+                            <Image className='rounded-xl' src={slider3} width={500} height={500} alt='slider'></Image>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='grid grid-cols-1 md:grid-cols-3 place-items-center gap-8'>
+                            <Image className='rounded-xl' src={slider1} width={500} height={500} alt='slider'></Image>
+                            <Image className='rounded-xl' src={slider2} width={500} height={500} alt='slider'></Image>
+                            <Image className='rounded-xl' src={slider3} width={500} height={500} alt='slider'></Image>
+                        </div>
+                    </SwiperSlide>
 
 
-            </Swiper>
+                </Swiper>
+            </div>
         </div>
     );
 };

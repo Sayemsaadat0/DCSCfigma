@@ -28,13 +28,47 @@ p {
 }
   
 
-.swiper-button-prev, .swiper-button-next {
-margin: 0 140px;
-}
-.swiper-button-prev::after, .swiper-button-next::after {
-  color : white;
-  padding: 4px 30px; 
+.swiper-button-prev,
+.swiper-button-next {
+  margin: 0 140px;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: white;
+  padding: 4px 30px;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* custom responsiveness */
+@media screen and (max-width: 640px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin: 0 70px;
+  }
+}
