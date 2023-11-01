@@ -36,7 +36,7 @@ const Hero = () => {
     };
 
     return (
-        <div className='min-h-screen pt-64' style={backgroundStyle}>
+        <div className=' pt-64' style={backgroundStyle}>
             {/* overlay with heading text */}
             <div className="hero" >
                 <div className="hero-content text-center text-neutral-content max-w-[1500px] mx-auto">
@@ -74,7 +74,7 @@ const Hero = () => {
                     className="mySwiper"
                 >
                     {
-                        imagebox.map((image, index) => <SwiperSlide key={index}><Image  className='rounded-xl'                        src={image} alt='image' width={400} height={400}></Image></SwiperSlide>)
+                        imagebox.map((image, index) => <SwiperSlide key={index}><Image  className='rounded-xl'                        src={image} alt='image' width={500} height={400}></Image></SwiperSlide>)
                     }
 
 

@@ -11,10 +11,11 @@
   justify-content: space-between;
   background-color: #041551;
   color: white;
+  position: relative; /* Add this to make it a positioning context */
 }
 
-p {
-  font-size: larger;
+::selection{
+  background-color: #1D65A6;
 }
 
 /*hero */
@@ -28,6 +29,42 @@ p {
   color: white;
   padding: 4px 30px;
 }
+
+/* this is for about section */
+.circle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.circle {
+  background: linear-gradient(90deg, #48A6DB, #00D856);
+  filter: blur(120px);
+  position: absolute;
+}
+
+/* this is for members */
+.cards {
+  background-image: linear-gradient(0deg, #1D65A6, transparent );
+  height: 100%;
+  position: absolute;
+  border-radius: 20px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
