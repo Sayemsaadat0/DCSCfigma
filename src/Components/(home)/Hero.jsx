@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="hero" >
                 <div className="hero-content text-center text-neutral-content max-w-[1500px] mx-auto">
                     <div className="max-w-7xl">
-                        <h1 className=" text-7xl font-bold my-10">DHAKA COLLEGE <br /> SCIENCE CLUB</h1>
+                        <h1 className=" text-7xl font-bold my-10 ">DHAKA COLLEGE <br /> SCIENCE CLUB</h1>
                     </div>
                 </div>
             </div>
