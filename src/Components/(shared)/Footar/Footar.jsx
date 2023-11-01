@@ -14,7 +14,7 @@ const Footar = () => {
                 <p className="font-bold text-2xl ">
                     Dhaka College Science Clab
                 </p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa vel accusamus suscipit mollitia quo numquam asperiores praesentium eum, incidunt quisquam dignissimos voluptatum, ut ullam quos placeat magni exercitationem qui consequuntursjdhsd shdusd  expl</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa vel accusamus suscipit mollitia quo numquam asperiores praesentium eum, incidunt quisquam dignissimos voluptatum, ut ullam quos placeat magni exercitationem qui ttconsequuntursjdhsd shdusd  expl</p>
             </aside>
 
             <div className='flex gap-4 '>
