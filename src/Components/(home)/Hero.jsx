@@ -2,7 +2,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import slider1 from '../../../public/swiper1.png'
@@ -13,12 +12,13 @@ const Hero = () => {
     const backgroundStyle = {
         backgroundImage: 'url(https://i.ibb.co/JqzMJMt/Herobg.png)',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover', // Adjust to your desired background size
-        backgroundPosition: 'center', // Adjust to your desired background position
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
     };
 
     return (
         <div className='min-h-screen pt-64' style={backgroundStyle}>
+            {/* overlay with heading text */}
             <div className="hero" >
                 <div className="hero-content text-center text-neutral-content max-w-[1500px] mx-auto">
                     <div className="max-w-7xl">
@@ -44,8 +44,6 @@ const Hero = () => {
                             <Image className='rounded-xl' src={slider3} width={500} height={500} alt='slider'></Image>
                         </div>
                     </SwiperSlide>
-
-
                 </Swiper>
             </div>
         </div>
