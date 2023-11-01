@@ -2,3 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+.Pagecss {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: #041551;
+  color: white;
+}
+p {
+  font-size: larger;
+}
+
+/*hero */
+
+.swiper-button-prev::before {
+  content: "";
+}
+
+/* Custom icon for next button */
+.swiper-button-next::before {
+  content: ""; 
+}
+  
+
+.swiper-button-prev, .swiper-button-next {
+margin: 0 140px;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+  color : white;
+  padding: 4px 30px; 
+}
+
+
+
