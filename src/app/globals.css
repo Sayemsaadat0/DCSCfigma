@@ -18,13 +18,6 @@ p {
 }
 
 /*hero */
-
-.swiper-button-prev::before {
-  content: "";
-}
-
-
-
 .swiper-button-prev,
 .swiper-button-next {
   margin: 0 140px;

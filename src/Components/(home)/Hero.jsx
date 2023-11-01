@@ -1,14 +1,33 @@
 "use client"
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/free-mode';
+
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+
+
+// import required modules
+import { FreeMode, Pagination , Navigation} from 'swiper/modules';
 import Image from 'next/image';
 import slider1 from '../../../public/swiper1.png'
 import slider2 from '../../../public/swiper2.png'
 import slider3 from '../../../public/swiper3.png'
 
 const Hero = () => {
+    const imagebox = [
+        slider1,
+        slider2,
+        slider3,
+        slider1,
+        slider2,
+        slider3,
+        slider1,
+        slider2,
+        slider3
+    ]
     const backgroundStyle = {
         backgroundImage: 'url(https://i.ibb.co/JqzMJMt/Herobg.png)',
         backgroundRepeat: 'no-repeat',
@@ -28,23 +47,39 @@ const Hero = () => {
             </div>
 
             {/* swier */}
-            <div className='max-w-[1500px] pt-28 mx-auto '>
-                <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                    <SwiperSlide>
-                        <div className='grid grid-cols-1 md:grid-cols-3 place-items-center gap-8'>
-                            <Image className='rounded-xl' src={slider1} width={500} height={500} alt='slider'></Image>
-                            <Image className='rounded-xl' src={slider2} width={500} height={500} alt='slider'></Image>
-                            <Image className='rounded-xl' src={slider3} width={500} height={500} alt='slider'></Image>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='grid grid-cols-1 md:grid-cols-3 place-items-center gap-8'>
-                            <Image className='rounded-xl' src={slider1} width={500} height={500} alt='slider'></Image>
-                            <Image className='rounded-xl' src={slider2} width={500} height={500} alt='slider'></Image>
-                            <Image className='rounded-xl' src={slider3} width={500} height={500} alt='slider'></Image>
-                        </div>
-                    </SwiperSlide>
+            <div className=' pt-28 mx-auto '>
+                <Swiper
+                    slidesPerView={3}
+                    spaceBetween={30}
+                    freeMode={true}
+                    navigation={true}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[FreeMode, Navigation]}
+                    breakpoints={{
+                        320: {
+                          slidesPerView: 1,
+                          spaceBetween: 5,
+                        },
+                        640: {
+                          slidesPerView: 2,
+                          spaceBetween: 5,
+                        },
+                        1200: {
+                          slidesPerView: 3,
+                          spaceBetween: 30,
+                        },
+                      }}
+                    className="mySwiper"
+                >
+                    {
+                        imagebox.map((image, index) => <SwiperSlide key={index}><Image  className='rounded-xl'                        src={image} alt='image' width={400} height={400}></Image></SwiperSlide>)
+                    }
+
+
                 </Swiper>
+
             </div>
         </div>
     );

@@ -17,8 +17,8 @@ const Navbar = () => {
         return router.asPath === href ? "text-blue-400" : "";
     };
     return (
-        <nav className="w-full md:mt-10 mt-4 z-10 absolute shadow">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <nav className="w-full  md:mt-10 mt-4 z-10 absolute ">
+            <div className="justify-between backdrop-blur-md px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 lg:block">
                         <Link href="javascript:void(0)">
@@ -64,10 +64,9 @@ const Navbar = () => {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
-                            }`}
-                    >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                        className={`flex-1  justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+                            }`}   >
+                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6  md:space-y-0">
                             <li >
                                 <Link className={`text-white hover:text-indigo-200 ${isLinkActive("/")}`} href="/">Home</Link>
                             </li>
