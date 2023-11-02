@@ -1,16 +1,9 @@
 "use client"
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
-
 import 'swiper/css/navigation';
-
-
-// import required modules
-import { FreeMode, Pagination , Navigation} from 'swiper/modules';
+import { FreeMode, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import slider1 from '../../../public/swiper1.png'
 import slider2 from '../../../public/swiper2.png'
@@ -37,7 +30,7 @@ const Hero = () => {
 
     return (
         <div className=' pt-64' style={backgroundStyle}>
-            {/* overlay with heading text */}
+
             <div className="hero" >
                 <div className="hero-content text-center text-neutral-content max-w-[1500px] mx-auto">
                     <div className="max-w-7xl">
@@ -59,25 +52,22 @@ const Hero = () => {
                     modules={[FreeMode, Navigation]}
                     breakpoints={{
                         320: {
-                          slidesPerView: 1,
-                          spaceBetween: 5,
+                            slidesPerView: 1,
+                            spaceBetween: 5,
                         },
                         640: {
-                          slidesPerView: 2,
-                          spaceBetween: 5,
+                            slidesPerView: 2,
+                            spaceBetween: 5,
                         },
                         1200: {
-                          slidesPerView: 3,
-                          spaceBetween: 30,
+                            slidesPerView: 3,
+                            spaceBetween: 30,
                         },
-                      }}
-                    className="mySwiper"
-                >
+                    }}
+                    className="mySwiper">
                     {
-                        imagebox.map((image, index) => <SwiperSlide key={index}><Image  className='rounded-xl'                        src={image} alt='image' width={500} height={400}></Image></SwiperSlide>)
+                        imagebox.map((image, index) => <SwiperSlide key={index}><Image className='rounded-xl' src={image} alt='image' width={500} height={400}></Image></SwiperSlide>)
                     }
-
-
                 </Swiper>
 
             </div>
