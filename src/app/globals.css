@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .Pagecss {
   width: 100%;
   margin: 0 auto;
@@ -11,60 +10,36 @@
   justify-content: space-between;
   background-color: #041551;
   color: white;
-  position: relative; 
+  position: relative;
 }
 
-::selection{
+::selection {
   background-color: #1d8ba6;
 }
-
 
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1a9eceb6; 
+  background: #1a9eceb6;
   border-radius: 30px;
 }
 
-
 ::-webkit-scrollbar-track {
-  background: #eeeeee00; 
+  background: #eeeeee00;
 }
 
 .active-link {
   background-color: red;
-  /* Add any other styling you want for the active link */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .header {
   font-family: serif;
 }
 
 /*hero */
-.swiper-button-prev ,
+.swiper-button-prev,
 .swiper-button-next {
   margin: 0 140px;
 }
@@ -74,8 +49,6 @@
   color: white;
   padding: 4px 120px;
 }
-
-
 
 /* this is for about section */
 .circle-container {
@@ -88,7 +61,7 @@
 }
 
 .circle {
-  background: linear-gradient(90deg, #48A6DB, #00D856);
+  background: linear-gradient(90deg, #48a6db, #00d856);
   filter: blur(120px);
   position: absolute;
   border-radius: 50%;
@@ -96,14 +69,13 @@
 
 /* this is for members */
 .cards {
-  background-image: linear-gradient(0deg, #1D65A6, transparent );
+  background-image: linear-gradient(0deg, #1d65a6, transparent);
   height: 70%;
   position: absolute;
   bottom: 0;
   border-radius: 20px;
   width: 100%;
 }
-
 
 /* helpdesh */
 .parallax {
@@ -112,47 +84,17 @@
   background-size: contain;
 }
 
-.input-data{
+.input-data {
   width: 100%;
   position: relative;
 }
-.input-data input{
+.input-data input {
   width: 100%;
   height: 100%;
   border: none;
   background: transparent;
   border-bottom: 2px solid white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* custom responsiveness */
 @media screen and (max-width: 640px) {
@@ -167,4 +109,3 @@
     background-image: none;
   }
 }
-
