@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="justify-between backdrop-blur-md px-4 mx-auto lg:max-w-[1366px] md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 lg:block">
-                        <Link href="javascript:void(0)">
+                        <Link href="/">
                             <Image width={90} height={120} alt="logo" src={logo}></Image>
                         </Link>
                         <div className="md:hidden">

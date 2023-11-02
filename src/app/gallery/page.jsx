@@ -1,14 +1,13 @@
-"use client"
+ "use client"
 import SectionTitle from '@/Components/(shared)/SectionTitle/SectionTitle';
 import Image from 'next/image';
 import { useState } from 'react';
-import gallary1 from '../../../public/gallary (1).png'
-import gallary2 from '../../../public/gallary (2).png'
-import gallary3 from '../../../public/gallary (3).png'
-import gallary4 from '../../../public/gallary (4).png'
-import gallary5 from '../../../public/gallary (5).png'
-import gallary6 from '../../../public/gallary (6).png'
-
+import gallary1 from '../../../public/gallary1.png'
+import gallary2 from '../../../public/gallary2.png'
+import gallary3 from '../../../public/gallary3.png'
+import gallary4 from '../../../public/gallary4.png'
+import gallary5 from '../../../public/gallary5.png'
+import gallary6 from '../../../public/gallary6.png'
 const page = () => {
  const imagesBox =[
     gallary1, 
@@ -55,8 +54,8 @@ const page = () => {
             <SectionTitle bigText={'Gallery'}></SectionTitle>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 px-4 mt-20 z-20 '>
                 {imagesBox.slice(0, visibleCount).map((data, index) => (
-                    <div key={index} className="card rounded-lg ">
-                        <Image className='relative rounded-lg' src={data} alt='ss' width={400} height={400} />
+                    <div key={index} className="card rounded-lg overflow-hidden relative">
+                        <Image className='hover:scale-105 duration-700 cursor-pointer rounded-lg' src={data} alt='ss' width={400} height={400} />
                     </div>
                 ))}
             </div>
@@ -70,4 +69,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default page; 

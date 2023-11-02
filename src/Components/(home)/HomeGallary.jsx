@@ -27,7 +27,7 @@ const HomeGallary = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='px-4'>
-                        <div className='grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-10'>
+                        <div className='grid grid-cols-2  md:grid-cols-4 gap-1 md:gap-10'>
                              <Image src={image1} alt='imgf' width={400} height={100}></Image>                           
                              <Image src={image1} alt='imgf' width={400} height={100}></Image>                           
                              <Image src={image1} alt='imgf' width={400} height={100}></Image>                           

@@ -18,6 +18,43 @@
   background-color: #1d8ba6;
 }
 
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a9eceb6; 
+  border-radius: 30px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #eeeeee00; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header {
   font-family: serif;
 }

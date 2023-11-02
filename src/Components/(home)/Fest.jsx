@@ -1,11 +1,9 @@
 "use client"
 import { useState } from "react";
 import { motion } from "framer-motion";
-import SectionTitle from "../(shared)/SectionTitle/SectionTitle";
 import Image from "next/image";
 import fest from '../../../public/fest.png'
-import { BsArrowUpRightSquareFill } from "react-icons/bs";
-// todo add slider 
+import { BsArrowUpRightSquareFill,BsArrowLeftSquare,BsArrowRightSquare } from "react-icons/bs";
 const Fest = () => {
     const backgroundStyle = {
         backgroundImage: 'url(https://i.ibb.co/y6bTH50/eventBg.png)',
@@ -73,51 +71,53 @@ const Fest = () => {
 
     return (
 
-        <div className="relative overflow-hidden">
-            <h1 className="absolute left-[45%] md:left-[50%] top-10">Hello</h1>
+        <div className="relative overflow-hidden pt-10 md:pt-0 max-w-[1500px] mx-auto">
+            <div className="absolute max-w-4xl text-center md:left-[30%] top-10">
+                <h1 className="md:text-4xl text-2xl  header md:py-4">DCSC EVENT FEST-2023</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laudantium ipsum </p>
+            </div>
             <div className="hero min-h-screen " style={backgroundStyle}>
-           
-           <div className="hero-content  text-center text-neutral-content  mx-auto ">
-               <div className="flex items-center justify-between ">
-                   {cardData.map((data, index) => (<motion.div
-                       initial="center"
-                       animate={positions[positionIndexes[index]]}
-                       variants={cardsVariants}
-                       transition={{ duration: 0.1 }}
-                       key={index} className="card 
-                   bg-[#1C2069] border w-full  md:w-[25%] absolute left-0 md:left-[38%]  border-[#484EDB] md:top-[20%] duration-700">
-                       <div className='flex  p-4'>
-                           <Image src={data.image} alt='e' width={400} height={400}></Image>
-                       </div>
-                       <div className="px-4">
-                           <h4 className='text-[#FFD707] header text-left text-xl md:text-2xl'>{data.title}</h4>
-                           <div className='flex  gap-6 items-center py-4'>
-                               <p className='md:whitespace-nowrap'>{data.date} </p>
-                               <button>
-                                   <BsArrowUpRightSquareFill className='text-[#216DDE] hover:text-[#5b61c6] bg-white rounded-md' size={40}></BsArrowUpRightSquareFill>
-                               </button>
-                           </div>
-                       </div>
-                   </motion.div>
-                   ))}
-               </div>
 
-               <div className="flex flex-row gap-3 mt-56">
-                   <button
-                       className="text-white mt-[400px] bg-indigo-400 rounded-md py-2 px-4"
-                       onClick={handleBack}
-                   >
-                       Back
-                   </button>
-                   <button
-                       className="text-white mt-[400px] bg-indigo-400 rounded-md py-2 px-4"
-                       onClick={handleNext}
-                   >
-                       Next
-                   </button>
-               </div>
-           </div>
-       </div>
+                <div className="hero-content  text-center text-neutral-content  mx-auto ">
+                    <div className="flex items-center justify-between ">
+                        {cardData.map((data, index) => (<motion.div
+                            initial="center"
+                            animate={positions[positionIndexes[index]]}
+                            variants={cardsVariants}
+                            transition={{ duration: 0.1 }}
+                            key={index} className="card 
+                   bg-[#1C2069] border w-full  md:w-[25%] absolute left-0 md:left-[38%]  border-[#484EDB] md:top-[25%] duration-700">
+                            <div className='flex  p-4'>
+                                <Image src={data.image} alt='e' width={400} height={400}></Image>
+                            </div>
+                            <div className="px-4">
+                                <h4 className='text-[#FFD707] header text-left text-xl md:text-2xl'>{data.title}</h4>
+                                <div className='flex  gap-6 items-center py-4'>
+                                    <p className='md:whitespace-nowrap'>{data.date} </p>
+                                    <button>
+                                        <BsArrowUpRightSquareFill className='text-[#216DDE] hover:text-[#5b61c6] bg-white rounded-md' size={40}></BsArrowUpRightSquareFill>
+                                    </button>
+                                </div>
+                            </div>
+                        </motion.div>
+                        ))}
+                    </div>
+
+                    <div className="flex flex-row gap-3 mt-56 ">
+                        <button
+                            className="mt-[400px] hover:text-gray-400  px-4"
+                            onClick={handleBack}
+                        >
+                            <BsArrowLeftSquare size={40}></BsArrowLeftSquare>
+                        </button>
+                        <button
+                            className="mt-[400px] hover:text-gray-400  px-4"
+                            onClick={handleNext}>
+                            <BsArrowRightSquare size={40}></BsArrowRightSquare>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
 
     );
