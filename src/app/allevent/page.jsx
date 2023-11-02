@@ -66,10 +66,8 @@ const page = () => {
         },
     ]
     return (
-        <div className="md:pt-64 pt-36 min-h-screen max-w-7xl mx-auto ">
+        <div className="md:pt-64 pt-36 min-h-screen max-w-7xl mx-auto px-6">
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-20'>
-                {/* card1 */}
-
                 {
                     cardData.map((data, index) => <div key={index} className="card 
                     bg-[#1C2069] border border-[#484EDB]">
@@ -86,10 +84,7 @@ const page = () => {
                             </div>
                         </div>
                     </div>
-                    )
-                }
-
-
+                    ) }
             </div>
         </div>
     );

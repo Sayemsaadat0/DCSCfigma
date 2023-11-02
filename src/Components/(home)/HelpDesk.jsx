@@ -10,7 +10,7 @@ const HelpDesk = () => {
             <div className='relative '>
                 <Image className='px-4 relative md:block hidden' src={helpbg} alt='bg' width={1500} height={400}></Image>
               
-                <div className='text-3xl text-center md:absolute top-10  left-44 md:pt-16'>
+                <div className='text-3xl text-center md:absolute top-10  left-36  md:pt-16'>
                 <SectionTitle bigText={'Need Any Help?'}></SectionTitle>
                     <div className='input-data  justify-center  md:flex gap-4 items-center py-6 px-6 md:px-28'>
                         <input className='email' type="Email" placeholder='Email' />
