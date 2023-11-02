@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import fest from '../../../public/fest.png'
-import { BsArrowUpRightSquareFill,BsArrowLeftSquare,BsArrowRightSquare } from "react-icons/bs";
+import { BsArrowUpRightSquareFill, BsArrowLeftSquare, BsArrowRightSquare } from "react-icons/bs";
 const Fest = () => {
     const backgroundStyle = {
         backgroundImage: 'url(https://i.ibb.co/y6bTH50/eventBg.png)',
@@ -103,11 +103,10 @@ const Fest = () => {
                         ))}
                     </div>
 
-                    <div className="flex flex-row gap-3 mt-56 ">
+                    <div className="flex flex-row gap-3 mt-72">
                         <button
                             className="mt-[400px] hover:text-gray-400  px-4"
-                            onClick={handleBack}
-                        >
+                            onClick={handleBack}>
                             <BsArrowLeftSquare size={40}></BsArrowLeftSquare>
                         </button>
                         <button
