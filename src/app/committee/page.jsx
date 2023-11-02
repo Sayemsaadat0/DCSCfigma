@@ -134,7 +134,7 @@ const page = () => {
     return (
         <div className='md:pt-64 pt-36 min-h-screen px-6 text-center max-w-[1500px] mx-auto relative'>
             <SectionTitle bigText={'Executive Committee 2023'} smallText={'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when'}></SectionTitle>
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-5 px-4 mt-20 z-20 '>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-4 mt-20  '>
                 {userData.slice(0, visibleCount).map((data, index) => (
                     <div key={index} className="card rounded-lg z-10">
                         <Image className='relative rounded-lg' src={data.image} alt='ss' width={400} height={400} />
