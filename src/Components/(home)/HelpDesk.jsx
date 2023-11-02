@@ -1,17 +1,22 @@
-import React from 'react';
-import Buttons from '../(shared)/Buttons/Buttons';
 
+
+import Image from 'next/image';
+import helpbg from '../../../public/helpbg.png'
+import Buttons from '../(shared)/Buttons/Buttons';
+import SectionTitle from '../(shared)/SectionTitle/SectionTitle';
 const HelpDesk = () => {
     return (
-        <div className='min-h-[480px] mx-auto flex justify-center items-center'>
-            <div className='parallax  w-full md:w-[900px] md:h-[300px] h-full flex justify-center '>
-                <div className='text-3xl text-center pt-10'>
-                    <h1 className='pb-10'>Need Any Help?</h1>
-                    <div className='input-data md:flex gap-4 items-center px-4 md:px-16'>
-                        <input type="Email" placeholder='Email' /> 
-                        
-                        <input className='my-10 md:my-0' type="text" placeholder='Details' />
-                        <Buttons text={'send'}></Buttons> 
+        <div className='md:min-h-[680px] pb-16 md:pb-0 flex justify-center max-w-[1500px] mx-auto items-center'>
+            <div className='relative '>
+                <Image className='px-4 relative md:block hidden' src={helpbg} alt='bg' width={1500} height={400}></Image>
+              
+                <div className='text-3xl text-center md:absolute top-10  left-44 md:pt-16'>
+                <SectionTitle bigText={'Need Any Help?'}></SectionTitle>
+                    <div className='input-data  justify-center  md:flex gap-4 items-center py-6 px-6 md:px-28'>
+                        <input className='email' type="Email" placeholder='Email' />
+
+                        <input  className='my-10 md:my-0 details' type="text" placeholder='Details' />
+                        <Buttons text={'Sent'}></Buttons>
                     </div>
                 </div>
             </div>

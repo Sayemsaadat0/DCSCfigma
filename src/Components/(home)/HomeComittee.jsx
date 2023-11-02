@@ -27,10 +27,10 @@ const HomeComittee = () => {
         }
     ]
     return (
-        <div className=' text-center '>
+        <div className=' text-center max-w-[1500px] mx-auto relative'>
             <SectionTitle bigText={'Executive Committee 2023'} smallText={'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when'}></SectionTitle>
-
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-5 px-4 mt-20 z-10 '>
+            {/* <div className='circle opacity-30 md:w-[100] md:h-[100] left-0 bottom-0 w-full h-full  absolute '></div> */}
+            <div className='grid grid-cols-1 md:grid-cols-4 gap-5 px-4 mt-20 z-20 '>
                 {
                     userData.map((data, index) => <div key={index} className="card rounded-lg z-10">
                         <Image className='relative rounded-lg' src={data.image} alt='ss' width={400} height={400}></Image>

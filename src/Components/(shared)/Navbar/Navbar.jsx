@@ -17,7 +17,7 @@ const Navbar = () => {
         return router.asPath === href ? "text-blue-400" : "";
     };
     return (
-        <nav className="w-full  md:mt-10 mt-4 z-10 absolute ">
+        <nav className="w-full  md:mt-10 mt-0 z-10 absolute ">
             <div className="justify-between backdrop-blur-md px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 lg:block">

@@ -29,18 +29,18 @@ const Hero = () => {
     };
 
     return (
-        <div className=' pt-64' style={backgroundStyle}>
+        <div className='md:pt-64 pt-32 ' style={backgroundStyle}>
 
             <div className="hero" >
                 <div className="hero-content text-center text-neutral-content max-w-[1500px] mx-auto">
                     <div className="max-w-7xl">
-                        <h1 className=" text-7xl font-bold my-10 ">DHAKA COLLEGE <br /> SCIENCE CLUB</h1>
+                        <h1 className=" text-3xl whitespace-nowrap md:text-7xl font-bold my-10 header">DHAKA COLLEGE <br /> SCIENCE CLUB</h1>
                     </div>
                 </div>
             </div>
 
             {/* swier */}
-            <div className=' pt-28 mx-auto '>
+            <div className='md:pt-28 pt-16 mx-auto max-w-[1500px] '>
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={30}

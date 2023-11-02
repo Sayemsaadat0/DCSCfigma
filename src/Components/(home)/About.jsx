@@ -11,12 +11,12 @@ const About = () => {
     };
 
     return (
-        <div className=' md:flex justify-evenly items-center min-h-screen '>
+        <div className=' md:flex justify-evenly items-center mt-20 md:mt-0 min-h-screen '>
 
             {/* tabs */}
             <div>
                 <div className="px-4">
-                    <h1 className='text-4xl py-4'>DCSC</h1>
+                    <h1 className='text-5xl  header pb-10'>DCSC</h1>
                     <div className="tabs p-2 flex justify-around tabs-boxed md:w-80 w-full">
                         <a
                             className={`tab inline-block px-5 py-1 text-center font-bold  ${activeTab === 'about' &&

@@ -12,7 +12,7 @@ const HomeGallary = () => {
         <div className='min-h-screen text-center pt-24 mx-auto max-w-[1500px]'>
             <SectionTitle bigText={'Gallery'} smallText={'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when'}></SectionTitle>
 
-            <div>
+            <div className='pt-20'>
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                     <SwiperSlide className='px-4'>
                         <div className='grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-10'>
