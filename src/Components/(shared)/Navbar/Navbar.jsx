@@ -3,21 +3,23 @@
 "use client"
 import { useState } from "react";
 import Buttons from "../Buttons/Buttons";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import logo from '../../../../public/logo.png'
+import { useRouter } from "next/navigation";
 
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
-    const router = useRouter()
-    console.log(router);
-    const isLinkActive = (href) => {
-        return router.asPath === href ? "text-blue-400" : "";
+
+
+    const isRouteActive = (path) => {
+        const router = useRouter();
+        return router.pathname === path ? "active-link" : "";
     };
+    console.log(isRouteActive);
     return (
-        <nav className="w-full  md:mt-10 mt-0 z-10 absolute ">
+        <nav className="w-full  md:mt-10 mt-0 z-10  absolute ">
             <div className="justify-between backdrop-blur-md px-4 mx-auto lg:max-w-[1366px] md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 lg:block">
@@ -67,18 +69,19 @@ const Navbar = () => {
                         className={`flex-1  justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                             }`}   >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6  md:space-y-0">
-                            <li >
-                                <Link className={`text-white hover:text-indigo-200 ${isLinkActive("/")}`} href="/">Home</Link>
+                            <li className={`text-white hover:text-indigo-300 ${isRouteActive("/")}`}>
+                                <Link href="/">Home</Link>
                             </li>
-                            <li className={`text-white hover:text-indigo-200 ${isLinkActive("/")}`}>
+                            <li className={`text-white hover:text-indigo-300 ${isRouteActive("/allevent")}`}>
                                 <Link href="/allevent">All Event</Link>
                             </li>
-                            <li className={`text-white hover:text-indigo-200 ${isLinkActive("/about")}`}>
+                            <li className={`text-white hover:text-indigo-300 ${isRouteActive("/committee")}`}>
                                 <Link href="/committee">Committee</Link>
                             </li>
-                            <li className={`text-white hover:text-indigo-200 ${isLinkActive("/contact")}`}>
+                            <li className={`text-white hover:text-indigo-300 ${isRouteActive("/gallery")}`}>
                                 <Link href="/gallery">Gallery</Link>
                             </li>
+
                         </ul>
 
                         <div className="mt-3 space-y-2 lg:hidden md:inline-block">

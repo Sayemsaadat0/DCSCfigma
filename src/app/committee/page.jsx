@@ -150,7 +150,7 @@ const page = () => {
             <div className='my-20'>
                 <button onClick={toggleView}
                     className='inline-block px-4 py-2 text-center text-white bg-gradient-to-r from-primary to-secondary hover:bg-gradient-to-r hover:from-secondary hover:to-primary rounded-[10px]'>
-                    {isShowingAll ? 'Load Less' : 'Load More'} </button>
+                    {isShowingAll ? 'See Less' : 'Load More'} </button>
             </div>
         </div>
     );

@@ -33,6 +33,10 @@
   background: #eeeeee00; 
 }
 
+.active-link {
+  background-color: red;
+  /* Add any other styling you want for the active link */
+}
 
 
 

@@ -51,7 +51,7 @@ const page = () => {
     };
     return (
         <div className='md:pt-64 pt-36 min-h-screen px-6 text-center max-w-[1500px] mx-auto relative'>
-            <SectionTitle bigText={'Gallery'}></SectionTitle>
+            <h1 className='text-5xl font-bold py-4 header'>Gallery</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 px-4 mt-20 z-20 '>
                 {imagesBox.slice(0, visibleCount).map((data, index) => (
                     <div key={index} className="card rounded-lg overflow-hidden relative">
@@ -63,7 +63,7 @@ const page = () => {
             <div className='my-20'>
                 <button onClick={toggleView}
                     className='inline-block px-4 py-2 text-center text-white bg-gradient-to-r from-primary to-secondary hover:bg-gradient-to-r hover:from-secondary hover:to-primary rounded-[10px]'>
-                    {isShowingAll ? 'Load Less' : 'Load More'} </button>
+                    {isShowingAll ? 'See Less' : 'Load More'} </button>
             </div>
         </div>
     );
